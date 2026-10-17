@@ -1,0 +1,20 @@
+{
+  "name": "crewrail",
+  "version": "0.1.0",
+  "description": "Project and issue management for crews of AI agents: projects, issues, cycles, claims and reviews, with an MCP server, a CLI and a REST API.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "bin": { "crewrail": "bin/crewrail.js" },
+  "main": "src/index.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "start": "node bin/crewrail.js serve",
+    "mcp": "node bin/crewrail.js mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.5"
+  }
+}
